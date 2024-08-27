@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes Latinos - Empleado del Mes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .product {
+            margin-bottom: 10px;
+        }
+        .product label {
+            margin-right: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #aaa;
+        }
+        #resultados {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ventas de Perfumes</h1>
+        <div class="product">
+            <label for="aqua">Aqua (200 USD):</label>
+            <input type="number" id="aqua" placeholder="Cantidad vendida por Juana" min="0">
+            <input type="number" id="aquaPedro" placeholder="Cantidad vendida por Pedro" min="0">
+        </div>
+        <div class="product">
+            <label for="emocion">Emoción (180 USD):</label>
+            <input type="number" id="emocion" placeholder="Cantidad vendida por Juana" min="0">
+            <input type="number" id="emocionPedro" placeholder="Cantidad vendida por Pedro" min="0">
+        </div>
+        <div class="product">
+            <label for="alegria">Alegría (160 USD):</label>
+            <input type="number" id="alegria" placeholder="Cantidad vendida por Juana" min="0">
+            <input type="number" id="alegriaPedro" placeholder="Cantidad vendida por Pedro" min="0">
+        </div>
+        <div class="product">
+            <label for="frescura">Frescura (150 USD):</label>
+            <input type="number" id="frescura" placeholder="Cantidad vendida por Juana" min="0">
+            <input type="number" id="frescuraPedro" placeholder="Cantidad vendida por Pedro" min="0">
+        </div>
+        <button onclick="calcularVentas()">Calcular Ventas</button>
+
+        <!-- Div donde se mostrarán los resultados -->
+        <div id="resultados"></div>
+    </div>
+
+    <!-- Agrega el script aquí -->
+    <script src="script.js"></script>
+</body>
+</html>
